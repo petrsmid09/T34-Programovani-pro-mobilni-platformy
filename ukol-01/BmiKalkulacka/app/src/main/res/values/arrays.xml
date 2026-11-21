@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    BMI categories as lists of values. All arrays share the same order,
+    which matches the order of the BmiCategory enum (index = ordinal()).
+-->
+<resources>
+    <string-array name="bmi_category_names">
+        <item>@string/category_underweight</item>
+        <item>@string/category_normal</item>
+        <item>@string/category_overweight</item>
+        <item>@string/category_obesity_1</item>
+        <item>@string/category_obesity_2</item>
+        <item>@string/category_obesity_3</item>
+    </string-array>
+
+    <string-array name="bmi_category_ranges">
+        <item>&lt; 18,5</item>
+        <item>18,5 – 24,9</item>
+        <item>25,0 – 29,9</item>
+        <item>30,0 – 34,9</item>
+        <item>35,0 – 39,9</item>
+        <item>≥ 40,0</item>
+    </string-array>
+
+    <string-array name="bmi_category_descriptions">
+        <item>Nízká tělesná hmotnost. Může jít o nedostatečnou výživu, vhodná je konzultace s lékařem.</item>
+        <item>Optimální hmotnost s nejnižším zdravotním rizikem.</item>
+        <item>Mírně zvýšené zdravotní riziko. Pomůže pravidelný pohyb a vyvážená strava.</item>
+        <item>Zvýšené riziko onemocnění srdce, cév a cukrovky.</item>
+        <item>Vysoké zdravotní riziko, doporučuje se odborná pomoc.</item>
+        <item>Velmi vysoké zdravotní riziko, je nutná lékařská péče.</item>
+    </string-array>
+
+    <array name="bmi_category_icons">
+        <item>@drawable/ic_bmi_underweight</item>
+        <item>@drawable/ic_bmi_normal</item>
+        <item>@drawable/ic_bmi_overweight</item>
+        <item>@drawable/ic_bmi_obesity_1</item>
+        <item>@drawable/ic_bmi_obesity_2</item>
+        <item>@drawable/ic_bmi_obesity_3</item>
+    </array>
+
+    <array name="bmi_category_colors">
+        <item>@color/bmi_underweight</item>
+        <item>@color/bmi_normal</item>
+        <item>@color/bmi_overweight</item>
+        <item>@color/bmi_obesity_1</item>
+        <item>@color/bmi_obesity_2</item>
+        <item>@color/bmi_obesity_3</item>
+    </array>
+</resources>

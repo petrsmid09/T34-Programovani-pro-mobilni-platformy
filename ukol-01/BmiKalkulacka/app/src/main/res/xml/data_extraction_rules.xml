@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The app stores no user data; nothing needs to be excluded from backup or device transfer. -->
+<data-extraction-rules>
+    <cloud-backup />
+    <device-transfer />
+</data-extraction-rules>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CategoriesActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/screen_padding">
+
+            <TextView
+                android:id="@+id/tvCategoriesTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:accessibilityHeading="true"
+                android:text="@string/title_categories"
+                android:textAppearance="?attr/textAppearanceHeadlineMedium"
+                tools:targetApi="28" />
+
+            <TextView
+                android:id="@+id/tvCategoriesIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/categories_intro"
+                android:textAppearance="?attr/textAppearanceBodyMedium" />
+
+            <!-- Shown only when the user already calculated a BMI on the main screen -->
+            <TextView
+                android:id="@+id/tvYourBmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_your_bmi"
+                android:padding="12dp"
+                android:textAppearance="?attr/textAppearanceTitleSmall"
+                android:textColor="?attr/colorOnPrimaryContainer"
+                android:visibility="gone"
+                tools:text="Vaše BMI 22,9 spadá do kategorie: Normální hmotnost"
+                tools:visibility="visible" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="?attr/materialCardViewOutlinedStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <!-- Rows are added in CategoriesActivity from the bmi_category_* resource arrays -->
+                <TableLayout
+                    android:id="@+id/tableCategories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="2"
+                    android:stretchColumns="2">
+
+                    <TableRow
+                        android:id="@+id/rowHeader"
+                        android:background="?attr/colorPrimaryContainer"
+                        android:paddingVertical="@dimen/table_cell_padding"
+                        tools:ignore="UselessParent">
+
+                        <Space
+                            android:layout_width="@dimen/category_icon_size"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="@dimen/table_cell_padding" />
+
+                        <TextView
+                            android:paddingHorizontal="@dimen/table_cell_padding"
+                            android:text="@string/table_header_range"
+                            android:textAppearance="?attr/textAppearanceTitleSmall"
+                            android:textColor="?attr/colorOnPrimaryContainer" />
+
+                        <TextView
+                            android:paddingEnd="@dimen/table_cell_padding"
+                            android:text="@string/table_header_category"
+                            android:textAppearance="?attr/textAppearanceTitleSmall"
+                            android:textColor="?attr/colorOnPrimaryContainer"
+                            tools:ignore="RtlSymmetry" />
+                    </TableRow>
+                </TableLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tvFormula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/categories_formula"
+                android:textAppearance="?attr/textAppearanceTitleSmall" />
+
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/categories_note"
+                android:textAppearance="?attr/textAppearanceBodySmall" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Back / leave button with an "exit" symbol -->
+    <Button
+        android:id="@+id/btnBack"
+        style="@style/Widget.Material3.Button.TonalButton.Icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/screen_padding"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btn_back"
+        app:icon="@drawable/ic_exit_to_app" />
+</LinearLayout>

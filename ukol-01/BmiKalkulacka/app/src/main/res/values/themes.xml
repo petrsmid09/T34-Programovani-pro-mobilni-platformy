@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme (light). -->
+    <style name="Base.Theme.BmiKalkulacka" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/brand_on_primary</item>
+        <item name="colorPrimaryContainer">@color/brand_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/brand_on_primary_container</item>
+    </style>
+
+    <style name="Theme.BmiKalkulacka" parent="Base.Theme.BmiKalkulacka" />
+</resources>

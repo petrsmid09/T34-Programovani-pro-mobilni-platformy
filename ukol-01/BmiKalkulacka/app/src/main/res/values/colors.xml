@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors (light theme) -->
+    <color name="brand_primary">#006A63</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="brand_primary_container">#9EF2E7</color>
+    <color name="brand_on_primary_container">#00201D</color>
+
+    <!-- Brand colors (dark theme) -->
+    <color name="brand_primary_dark">#82D5CB</color>
+    <color name="brand_on_primary_dark">#003733</color>
+    <color name="brand_primary_container_dark">#00504A</color>
+    <color name="brand_on_primary_container_dark">#9EF2E7</color>
+
+    <!-- BMI category colors -->
+    <color name="bmi_underweight">#1E88E5</color>
+    <color name="bmi_normal">#43A047</color>
+    <color name="bmi_overweight">#F9A825</color>
+    <color name="bmi_obesity_1">#FB8C00</color>
+    <color name="bmi_obesity_2">#F4511E</color>
+    <color name="bmi_obesity_3">#D32F2F</color>
+
+    <!-- Launcher icon background -->
+    <color name="ic_launcher_background">#006A63</color>
+</resources>

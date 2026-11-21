@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- One row of the BMI categories table (inflated in CategoriesActivity). -->
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingVertical="@dimen/table_cell_padding">
+
+    <ImageView
+        android:id="@+id/ivCategoryIcon"
+        android:layout_width="@dimen/category_icon_size"
+        android:layout_height="@dimen/category_icon_size"
+        android:layout_marginStart="@dimen/table_cell_padding"
+        android:importantForAccessibility="no"
+        tools:src="@drawable/ic_bmi_normal" />
+
+    <TextView
+        android:id="@+id/tvCategoryRange"
+        android:paddingHorizontal="@dimen/table_cell_padding"
+        android:textAppearance="?attr/textAppearanceTitleSmall"
+        tools:text="18,5 – 24,9" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/table_cell_padding"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/tvCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceTitleSmall"
+            tools:text="Normální hmotnost" />
+
+        <TextView
+            android:id="@+id/tvCategoryDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            tools:text="Optimální hmotnost s nejnižším zdravotním rizikem." />
+    </LinearLayout>
+</TableRow>

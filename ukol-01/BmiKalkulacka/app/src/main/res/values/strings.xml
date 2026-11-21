@@ -1,0 +1,44 @@
+<resources>
+    <!-- Application -->
+    <string name="app_name">Kalkulačka BMI</string>
+
+    <!-- Main activity (calculator) -->
+    <string name="title_main">Kalkulačka BMI</string>
+    <string name="intro_main">Zadejte svou výšku a hmotnost. Aplikace spočítá index tělesné hmotnosti (BMI) a vyhodnotí jej.</string>
+    <string name="label_height">Výška v centimetrech</string>
+    <string name="label_weight">Hmotnost v kilogramech</string>
+    <string name="hint_height">Výška (cm)</string>
+    <string name="hint_weight">Hmotnost (kg)</string>
+    <string name="btn_calculate">Spočítat BMI</string>
+    <string name="result_placeholder">Výsledek se zobrazí zde.</string>
+    <string name="hint_info">Přehled kategorií BMI zobrazíte ikonou „i“ vpravo nahoře.</string>
+    <string name="cd_show_categories">Zobrazit přehled kategorií BMI</string>
+
+    <!-- Input validation messages -->
+    <string name="error_empty">Vyplňte všechny údaje!</string>
+    <string name="error_invalid">Zadejte platné číslo!</string>
+    <string name="error_height_range">Výška musí být v rozmezí %1$d – %2$d cm!</string>
+    <string name="error_weight_range">Hmotnost musí být v rozmezí %1$d – %2$d kg!</string>
+
+    <!-- Parameterized result strings: %1$s = BMI value, %2$s = category name -->
+    <string name="bmi_result">Vaše BMI: %1$s\nHodnocení: %2$s</string>
+    <string name="bmi_value_format">%.1f</string>
+
+    <!-- BMI category names (also referenced from the bmi_category_names array) -->
+    <string name="category_underweight">Podváha</string>
+    <string name="category_normal">Normální hmotnost</string>
+    <string name="category_overweight">Nadváha</string>
+    <string name="category_obesity_1">Obezita I. stupně</string>
+    <string name="category_obesity_2">Obezita II. stupně</string>
+    <string name="category_obesity_3">Obezita III. stupně</string>
+
+    <!-- Categories activity -->
+    <string name="title_categories">Kategorie BMI</string>
+    <string name="categories_intro">Rozdělení dospělých osob podle indexu tělesné hmotnosti dle Světové zdravotnické organizace (WHO).</string>
+    <string name="categories_your_bmi">Vaše BMI %1$s spadá do kategorie: %2$s</string>
+    <string name="table_header_range">BMI</string>
+    <string name="table_header_category">Kategorie</string>
+    <string name="categories_formula">BMI = hmotnost (kg) / výška (m)²</string>
+    <string name="categories_note">BMI je orientační ukazatel. U dětí, sportovců, seniorů a těhotných žen nemusí vypovídat přesně.</string>
+    <string name="btn_back">Zpět na kalkulačku</string>
+</resources>
